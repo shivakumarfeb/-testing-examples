@@ -21,8 +21,6 @@ pipeline {
         always {
             junit 'target/surefire-reports/TEST-*.xml'
         }
-        failure {
-            mail to: 'kiwaczki@gmail.com', subject: 'The Pipeline failed :(', body:'The Pipeline failed :('
-        }
+        
     }
 }
