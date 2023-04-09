@@ -19,7 +19,8 @@ pipeline {
     }
     post {
         always {
-            junit 'target/surefire-reports/TEST-*.xml'
+           // junit 'target/surefire-reports/TEST-*.xml'
+           junit /var/lib/jenkins/workspace/maventest1/Report_TC_SmokeTests.xml
         }
         
     }
