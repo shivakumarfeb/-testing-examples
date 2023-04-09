@@ -21,6 +21,7 @@ pipeline {
         always {
            // junit 'target/surefire-reports/TEST-*.xml'
            junit '/var/lib/jenkins/workspace/maventest1/Report_TC_SmokeTests.xml'
+            junit '/var/lib/jenkins/workspace/maventest1/ testresult.xml'
         }
         
     }
